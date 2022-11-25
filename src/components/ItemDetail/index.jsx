@@ -2,9 +2,9 @@ import { collection, getDocs, getFirestore } from 'firebase/firestore';
 import React, { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import { useCartContext } from '../../context/CartContext';
-import { useStoreContext } from '../../context/StoreContext';
 import { Loader } from '../Loader';
 import './style.css'
+import Swal from 'sweetalert2';
 
 export const ItemDetail = () => {
 
@@ -16,6 +16,12 @@ export const ItemDetail = () => {
 
     const handleAddItem = () => {
         addItem(item, 1);
+        Swal.fire({
+            icon: 'success',
+            title: 'Item added to cart',
+            showConfirmButton: false,
+            timer: 1500
+        })
     }
 
     

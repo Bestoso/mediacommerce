@@ -11,7 +11,6 @@ import { ItemDetail } from "./components/ItemDetail"
 import { CartContextProvider } from "./context/CartContext"
 import { Cart } from "./components/Cart"
 import { StoreContextProvider } from "./context/StoreContext"
-import { Loader } from "./components/Loader"
 
 function App() {
 

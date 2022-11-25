@@ -1,12 +1,33 @@
+# BESTOSO MEDIA & COMMERCE
 
+### Esta web fue creada con vite y react como parte del proyecto final para el curso de React.JS de Coder House, en la misma se pueden encontrar el comercio de la pagina que vende articulos orientados a la programacion y el desarrollo web. El sitio web es apto para simular todo el proceso de compra. Recomiendo una resolucion de 520 x 667px debido a que solo esta hecha la version para moviles, por lo que podria afectar la experiencia de usuario.
 
+## Tecnologias usadas
 
-# Caracteristicas para la entrega:
+- React
+- SCSS
+- Firebase
+- Framer Motion
+- React Router Dom
 
-# Navegacion a Secciones y categorias: si
-# Cart persistente durante todo el proyecto: si
-# Funciones para agregar y eliminar items en especifico: si
-# funciones para vaciar el carrito y realizar la compra: si
-# Validaciones de formulario y orden de compra: si
-# No hay nada en consola: si
-# Loaders
+## Dependencias 
+
+- sweetalert2
+- motion
+- react-router-dom
+- firebase
+
+## Consideraciones
+
+- Para cada componente se creó un directorio que contiene al componente en sí como también a su hoja de estilos buscando mantener el proyecto organizado.
+- La versión de escritorio está pendiente.
+- El proyecto cuenta con un total de cinco rutas principales.
+- El mismo cuenta con su respectiva navegacion y filtrado entre las categorias.
+- Cuenta con los respectivos loaders en las secciones requeridas
+- El carrito se mantiene durante toda la experiencia del usuario
+- Cuenta con las funciones de agregar al carrito, eliminar items en especifico, vaciar el carrito (al cancelar la compra) y realizar la orden generando una nueva coleccion en firebase
+- Cuenta con funciones de filtrado para la busqueda de valores particulares en el apartado "tutorials"
+- Cuenta con sus respectivas validaciones de formulario utilizando expresiones regulares:
+  - nombre: minimo de 3 caracteres, maximo de 30.
+  - email: de dos a 3 caracteres con caracter "@" obligatorio y repeticion de email.
+  - telefono: minimo y maximo de 10 caracteres.

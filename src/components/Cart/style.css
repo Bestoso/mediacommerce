@@ -120,4 +120,30 @@
 }
 .cancel__button:hover {
   background-color: rgb(187, 21, 21);
-}/*# sourceMappingURL=style.css.map */
+}
+
+.cart__section .cart__title{
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.cart__section a{
+  text-decoration: none;
+  color: #333;
+}
+
+.cart__section a button{
+  padding: 10px 20px;
+  border: 1px solid #333;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.empty{
+  text-align: center;
+}

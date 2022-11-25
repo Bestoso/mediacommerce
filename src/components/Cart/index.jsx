@@ -1,11 +1,13 @@
-import { addDoc, collection, getFirestore } from 'firebase/firestore';
 import React from 'react'
+import { addDoc, collection, getFirestore } from 'firebase/firestore';
+import { Link } from 'react-router-dom';
 import { useCartContext } from '../../context/CartContext';
+import Swal from "sweetalert2"
 import './style.css'
 
 export const Cart = () => {
 
-    const { cart, setCart, clear, setQuantity } = useCartContext();
+    const { cart, setCart, clear, setQuantity, quantity, setPrice } = useCartContext();
 
     const createOrder = async e => {
         const order = {
@@ -30,8 +32,6 @@ export const Cart = () => {
         const addNewOrder = await addDoc(orders, order);
     }
 
-    //create a function to delete a certain item from the cart
-
     const removeItem = (item) => {
         cart.splice(item, 1);
         setCart([...cart]);
@@ -55,31 +55,77 @@ export const Cart = () => {
             phone: /^\d{10}$/,
         }
         if (values.name === '') {
-            alert('Please enter your name')
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Please enter your name',
+            })
         } else if (!regExp.name.test(values.name)) {
-            alert('The name must be between 3 and 30 characters long')
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'The name must be between 3 and 30 characters long',
+            })
         } else if (values.email === '') {
-            alert('Please enter your email')
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Please enter your email',
+            })
         } else if (!regExp.email.test(values.email)) {
-            alert('Please enter a valid email')
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Please enter a valid email!',
+            })
         } else if (values.repEmail === '') {
-            alert('Please repeat your email')
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Please repeat your email',
+            })
         } else if (values.repEmail !== values.email) {
-            alert('Please enter the same email')
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'The emails do not match',
+            })
         } else if (values.phone === '') {
-            alert('Please enter your phone')
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Please enter your phone number',
+            })
         } else if (!regExp.phone.test(values.phone)) {
-            alert('Your phone must be 10 digits long')
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Please enter a valid phone number',
+            })
         } else {
-            alert('Your order has been sent')
+            Swal.fire({
+                icon: 'success',
+                title: 'Your order has been placed successfully!',
+                showConfirmButton: false,
+                timer: 1500
+            })
             createOrder(e);
-            clear()
-            setTimeout(() => {
-                // window.location.reload()
-            }, 1500)
+            setCart([]);
+            setPrice(0);
+            setQuantity(0);
         }
     }
 
+    if (quantity < 1) {
+        return (
+            <div className="cart__section empty">
+                <h2 className='cart__title'>Your cart is empty</h2>
+                <Link to="/">
+                    <button className="btn">Go Home</button>
+                </Link>
+            </div>
+        )
+    } else {
     return (
         <div className='cart__section'>
             <div className='cart__container'>
@@ -136,5 +182,5 @@ export const Cart = () => {
             <button
             onClick={clear} className='cancel__button'>Cancel</button>
         </div>
-    )
+    )}
 }

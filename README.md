@@ -24,6 +24,7 @@
 - El proyecto cuenta con un total de cinco rutas principales en las cuales el comercio se encuentra en el menu de navegacion "commerce"
 - El mismo cuenta con su respectiva navegacion y filtrado entre las categorias.
 - Cuenta con los respectivos loaders en las secciones requeridas
+- Todo el contenido del sitio esta generado con firebase
 - El carrito se mantiene durante toda la experiencia del usuario
 - Cuenta con las funciones de agregar al carrito, eliminar items en especifico, vaciar el carrito (al cancelar la compra) y realizar la orden generando una nueva coleccion en firebase
 - Cuenta con funciones de filtrado para la busqueda de valores particulares en el apartado "tutorials"

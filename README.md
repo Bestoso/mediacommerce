@@ -31,3 +31,6 @@
   - nombre: minimo de 3 caracteres, maximo de 30.
   - email: de dos a 3 caracteres con caracter "@" obligatorio y repeticion de email.
   - telefono: minimo y maximo de 10 caracteres.
+- El deploy esta hecho en Vercel y la pagina se puede visualizar desde alli.
+- Se creo un gif con el funcionamiento general de la aplicacion
+

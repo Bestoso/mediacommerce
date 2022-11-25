@@ -23,7 +23,7 @@
   margin-bottom: 20px;
   text-align: center;
   cursor: pointer;
-  height: 250px;
+  height: fit-content;
   position: relative;
 }
 .news__section .news__container .news__card::after {
@@ -64,4 +64,4 @@
 }
 .news__section .news__container .news__card .news__card__button:hover {
   background-color: #000;
-}/*# sourceMappingURL=style.css.map */
+}

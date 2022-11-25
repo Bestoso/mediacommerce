@@ -109,3 +109,15 @@
   text-transform: capitalize;
   -webkit-text-stroke: 1px #000000;
 }/*# sourceMappingURL=style.css.map */
+
+@media screen and (min-width: 375px) {
+  .category__page .category__container .category__item {
+    height: 180px;
+  }
+  .category__page .category__container .category__item .category__name {
+    font-size: 1.2rem;
+  }
+  .category__page .category__container .category__item .category__price {
+    font-size: 1.2rem;
+  }
+}

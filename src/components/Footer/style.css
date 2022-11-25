@@ -86,4 +86,10 @@
 .footer__section .container .social__links .social__links__list .social__links__item a:hover {
   background-color: #333;
   color: #fff;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media screen and (min-width: 375px) {
+  .footer__section .subscribe__section .input__section .subscribe__input {
+    width: 200px;
+  }
+}

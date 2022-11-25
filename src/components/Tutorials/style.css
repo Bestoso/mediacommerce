@@ -1,0 +1,75 @@
+.tutorials__section {
+  padding: 90px 20px 0px;
+}
+.tutorials__section .category__selection #search {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #333;
+  outline: none;
+  padding: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.tutorials__section .category__selection .search__title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+.tutorials__section .tutorials__container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.tutorials__section .tutorials__container .tutorials__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+.tutorials__section .tutorials__container .tutorial__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 110px;
+  background-color: rgba(255, 255, 255, 0.685);
+}
+.tutorials__section .tutorials__container .tutorial__card .image__container {
+  width: 40%;
+  height: 100px;
+}
+.tutorials__section .tutorials__container .tutorial__card .image__container .tutorial__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.tutorials__section .tutorials__container .tutorial__card .tutorial__info {
+  margin-left: 10px;
+  width: 60%;
+}
+.tutorials__section .tutorials__container .tutorial__card .tutorial__info .tutorial__title {
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.tutorials__section .tutorials__container .tutorial__card .tutorial__info .tutorial__description {
+  font-weight: 400;
+  color: var(--primary-color);
+}
+.tutorials__section .tutorials__container .tutorial__card .tutorial__info .tutorial__button {
+  border: none;
+  border-radius: 5px;
+  color: #333;
+  font-size: 1rem;
+  background-color: transparent;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.tutorials__section .tutorials__container .tutorial__card .tutorial__info .tutorial__button:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */

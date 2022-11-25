@@ -1,0 +1,59 @@
+.contact__page {
+  padding: 80px 20px 0px;
+}
+.contact__page .contact__container {
+  display: flex;
+  flex-direction: column;
+}
+.contact__page .contact__container .contact__title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.contact__page .contact__container .contact__message {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.contact__page .contact__form__container .contact__form .contact__form__group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.contact__page .contact__form__container .contact__form .contact__form__group .contact__form__label {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.contact__page .contact__form__container .contact__form .contact__form__group .contact__form__input {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  background-color: rgba(255, 255, 255, 0.1568627451);
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  outline: none;
+}
+.contact__page .contact__form__container .contact__form .contact__form__group .contact__form__textarea {
+  padding: 10px 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.6862745098);
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.contact__page .contact__form__container .contact__form .contact__form__group .contact__form__button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.contact__page .contact__form__container .contact__form .contact__form__group .contact__form__button:hover {
+  background-color: #000;
+}/*# sourceMappingURL=style.css.map */

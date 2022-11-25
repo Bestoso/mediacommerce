@@ -1,0 +1,89 @@
+.footer__section {
+  padding: 30px 20px;
+}
+.footer__section .subscribe__section {
+  padding: 60px 20px;
+  color: #333;
+  text-align: center;
+}
+.footer__section .subscribe__section .text__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__section .subscribe__section .text__section .subscribe__title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.footer__section .subscribe__section .text__section .subscribe__description {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.footer__section .subscribe__section .input__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.footer__section .subscribe__section .input__section .subscribe__input {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  background-color: rgba(255, 255, 255, 0.6862745098);
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-right: 10px;
+}
+.footer__section .subscribe__section .input__section .subscribe__button {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.footer__section .subscribe__section .input__section .subscribe__button:hover {
+  background-color: #000;
+}
+.footer__section .container .social__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.footer__section .container .social__links .social__links__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer__section .container .social__links .social__links__list .social__links__item {
+  margin: 0 10px;
+}
+.footer__section .container .social__links .social__links__list .social__links__item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: 1px solid #333;
+  width: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.6862745098);
+  color: rgb(27, 27, 27);
+  font-size: 1.5rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.footer__section .container .social__links .social__links__list .social__links__item a:hover {
+  background-color: #333;
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */

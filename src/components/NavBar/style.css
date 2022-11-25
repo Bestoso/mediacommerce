@@ -1,0 +1,136 @@
+.header {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 20px;
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(rgba(3, 0, 0, 0.0156862745), rgba(0, 0, 0, 0));
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+.header.active {
+  background: rgba(255, 255, 255, 0.795);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+}
+.header .menu__toggler {
+  height: 10px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  z-index: 100;
+}
+.header .menu__toggler:hover .toggler {
+  box-shadow: 0px 0px 10px #fff;
+}
+.header .menu__toggler.active .toggler {
+  transform: rotate(22deg);
+}
+.header .menu__toggler.active .toggler:last-child {
+  transform: rotate(-22deg);
+}
+.header .menu__toggler .toggler {
+  height: 1px;
+  width: 80%;
+  transform-origin: left;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+.header .navigable__links {
+  z-index: 20;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 500ms ease;
+  left: -100%;
+}
+.header .navigable__links.active {
+  opacity: 1;
+  left: 0;
+}
+.header .navigable__links .links {
+  padding-top: 3rem;
+  background-color: rgba(240, 240, 240, 0.6862745098);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3019607843);
+  height: 100%;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  color: #333;
+}
+.header .navigable__links .links .link {
+  list-style: none;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+.header .navigable__links .links .link a {
+  font-weight: 300;
+  letter-spacing: 3px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.header .navigable__links .links .link a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+.header .navigable__links .links .link a:hover {
+  text-shadow: 0px 0px 20px #fff;
+  letter-spacing: 1px;
+}
+.header .navigable__links .links .link a:hover::after {
+  width: 100%;
+}
+.header .logo__container {
+  color: var(--primary-color);
+  z-index: 10;
+  display: flex;
+}
+.header .logo__container .logo {
+  text-transform: uppercase;
+}
+.header .logo__container .logo .highlighted {
+  letter-spacing: 1px;
+  font-style: italic;
+  position: relative;
+}
+.header .logo__container .logo__info {
+  margin-left: 10px;
+  text-decoration: none;
+  color: var(--primary-color);
+  display: flex;
+}
+.header .logo__container .logo__info .bx {
+  font-size: 1.4rem;
+  transition: all 0.3s ease-in-out;
+}
+.header .logo__container .logo__info .bx:hover {
+  text-shadow: 0px 0px 20px #fff;
+}/*# sourceMappingURL=style.css.map */

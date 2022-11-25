@@ -1,0 +1,76 @@
+.commerce__section {
+  padding: 90px 20px 0px;
+}
+.commerce__section .commerce__container .text__container {
+  display: flex;
+  flex-direction: column;
+}
+.commerce__section .commerce__container .text__container .commerce__title {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.commerce__section .commerce__container .text__container .commerce__info {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.commerce__section .commerce__container .categories__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 100%;
+}
+.commerce__section .commerce__container .categories__container .category__card {
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 20px 0 rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+  height: 250px;
+  width: 48%;
+  position: relative;
+}
+.commerce__section .commerce__container .categories__container .category__card .category__image__container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  filter: blur(45px);
+  transition: all 0.3s ease-in-out;
+}
+.commerce__section .commerce__container .categories__container .category__card .category__image__container:hover {
+  filter: blur(0px);
+}
+.commerce__section .commerce__container .categories__container .category__card .category__image__container .category__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 20px;
+}
+.commerce__section .commerce__container .categories__container .category__card .category__name {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  mix-blend-mode: color-burn;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.356);
+}/*# sourceMappingURL=style.css.map */

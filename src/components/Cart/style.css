@@ -1,0 +1,123 @@
+.cart__section {
+  padding: 80px 20px 0px;
+}
+.cart__section .cart__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.cart__section .cart__container .cart__table {
+  width: 100%;
+  max-width: 500px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.cart__section .cart__container .cart__table .cart__table__header {
+  background-color: rgba(41, 41, 41, 0.164);
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px 0px;
+}
+.cart__section .cart__container .cart__table .cart__table__header .cart__table__title {
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border: 1px solid #333;
+  width: 200px;
+}
+.cart__section .cart__container .cart__table .cart__table__body {
+  text-transform: capitalize;
+  background-color: rgba(255, 255, 255, 0.171);
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  padding: 10px 0px;
+}
+.cart__section .cart__container .cart__table .cart__table__body .cart__table__total {
+  letter-spacing: 1px;
+}
+.cart__section .cart__container .cart__table .cart__table__body .cart__table__item {
+  padding: 10px 0px;
+  width: 200px;
+  border: 1px solid #333;
+}
+.cart__section .cart__container .cart__table .cart__table__body .cart__table__item button {
+  display: inline-block;
+  background-color: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+.cart__section .cart__container .cart__table .cart__table__body .cart__table__item button:hover {
+  color: #ff0000;
+}
+.cart__section .form__container {
+  padding-top: 30px;
+}
+.cart__section .form__container .form__title {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.cart__section .form__container .form__description {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.cart__section .form__container .form__input {
+  padding: 10px 20px;
+  border: none;
+  border-bottom: 1px solid #333;
+  background-color: transparent;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+.cart__section .form__container .form__input:focus {
+  outline: none;
+}
+.cart__section .form__container .form__button {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.cart__section .form__container .form__button:hover {
+  background-color: #000;
+}
+
+.cancel__button {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.cancel__button:hover {
+  background-color: rgb(187, 21, 21);
+}/*# sourceMappingURL=style.css.map */

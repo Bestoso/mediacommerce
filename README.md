@@ -34,3 +34,4 @@
 - El deploy esta hecho en Vercel y la pagina se puede visualizar desde alli.
 - Se creo un gif con el funcionamiento general de la aplicacion
 
+![funcionamiento](https://user-images.githubusercontent.com/106178878/203997844-2b42c672-8da5-429b-b496-291f2db51474.gif)

@@ -21,9 +21,10 @@
 
 - Para cada componente se creó un directorio que contiene al componente en sí como también a su hoja de estilos buscando mantener el proyecto organizado.
 - La versión de escritorio está pendiente.
-- El proyecto cuenta con un total de cinco rutas principales.
+- El proyecto cuenta con un total de cinco rutas principales en las cuales el comercio se encuentra en el menu de navegacion "commerce"
 - El mismo cuenta con su respectiva navegacion y filtrado entre las categorias.
 - Cuenta con los respectivos loaders en las secciones requeridas
+- Todo el contenido del sitio esta generado con firebase
 - El carrito se mantiene durante toda la experiencia del usuario
 - Cuenta con las funciones de agregar al carrito, eliminar items en especifico, vaciar el carrito (al cancelar la compra) y realizar la orden generando una nueva coleccion en firebase
 - Cuenta con funciones de filtrado para la busqueda de valores particulares en el apartado "tutorials"
@@ -34,3 +35,4 @@
 - El deploy esta hecho en Vercel y la pagina se puede visualizar desde alli.
 - Se creo un gif con el funcionamiento general de la aplicacion
 
+![funcionamiento](https://user-images.githubusercontent.com/106178878/203997844-2b42c672-8da5-429b-b496-291f2db51474.gif)

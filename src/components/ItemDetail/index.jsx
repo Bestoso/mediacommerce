@@ -9,10 +9,11 @@ import Swal from 'sweetalert2';
 export const ItemDetail = () => {
 
     const [item, setItem] = useState([]);
-    const { itemId }  = useParams();
-    const n = useNavigate();
-    const { addItem } = useCartContext();
     const [loader, setLoader] = useState(true);
+    
+    const n = useNavigate();
+    const { itemId }  = useParams();
+    const { addItem } = useCartContext();
 
     const handleAddItem = () => {
         addItem(item, 1);

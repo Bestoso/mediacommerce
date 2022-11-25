@@ -21,7 +21,7 @@
 
 - Para cada componente se creó un directorio que contiene al componente en sí como también a su hoja de estilos buscando mantener el proyecto organizado.
 - La versión de escritorio está pendiente.
-- El proyecto cuenta con un total de cinco rutas principales.
+- El proyecto cuenta con un total de cinco rutas principales en las cuales el comercio se encuentra en el menu de navegacion "commerce"
 - El mismo cuenta con su respectiva navegacion y filtrado entre las categorias.
 - Cuenta con los respectivos loaders en las secciones requeridas
 - El carrito se mantiene durante toda la experiencia del usuario

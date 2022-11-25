@@ -38,9 +38,13 @@ export const News = () => {
                     news.map((item) => {
                         return (
                             <motion.div
-                                initial={{ opacity: 0, y: 30 }}
+                                initial={{ opacity: 0, y: 30}}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ duration: .3 }}
+                                drag={true}
+                                dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+                                dragElastic={0.5}
+                                dragTransition={{ bounceStiffness: 600, bounceDamping: 25 }}
                                 className='news__card' key={item.id}>
                                 <h1 className='news__card__title'>{item.title}</h1>
                                 <p className='news__card__description'>{item.description}</p>

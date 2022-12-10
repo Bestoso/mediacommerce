@@ -35,4 +35,5 @@
 - El deploy esta hecho en Vercel y la pagina se puede visualizar desde alli.
 - Se creo un gif con el funcionamiento general de la aplicacion
 
-![funcionamiento](https://user-images.githubusercontent.com/106178878/203997844-2b42c672-8da5-429b-b496-291f2db51474.gif)
+
+![Vite-React-Google-Chrome-2022-12-09-20-58-48](https://user-images.githubusercontent.com/106178878/206814118-af051486-8d54-4926-a7b6-85bdf7a9081c.gif)
